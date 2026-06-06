@@ -1,0 +1,18 @@
+Data Cleaning Steps Performed
+
+1. Checked for duplicate rows.
+   Result: No duplicates found.
+
+2. Checked for missing values.
+   Result: No missing values found.
+
+3. Standardized restaurant names.
+   Example:
+   Domino's Pizza -> Domino's Pizza
+   Pizza Hut -> Pizza Hut
+
+4. Standardized menu category names.
+
+5. Verified price values are numeric.
+
+Dataset Ready For Analysis.

@@ -1,0 +1,143 @@
+# Methodology Report
+
+## Cloud Kitchen Market Intelligence Project – Nashik
+
+### Introduction
+
+The objective of this project was to conduct a market intelligence study of food delivery restaurants operating in the College Road locality of Nashik. The project focused on collecting restaurant data, investigating platform APIs, analyzing menu information, cleaning datasets, and generating business insights.
+
+---
+
+## Data Collection Process
+
+Restaurant data was collected manually from the Swiggy food delivery platform using the College Road locality in Nashik.
+
+A dataset of more than 30 restaurants was created containing the following attributes:
+
+* Restaurant Name
+* Cuisine(s)
+* Rating
+* Number of Reviews
+* Cost for Two
+* Locality
+* Delivery Time
+* Restaurant Type (Cloud Kitchen, Dine-In, or Unknown)
+
+The collected data was stored in CSV format for further analysis.
+
+---
+
+## Network Investigation
+
+Browser Developer Tools (Chrome DevTools) were used to inspect network requests generated while browsing restaurant listings and menus.
+
+The following API endpoints were identified:
+
+1. `/dapi/restaurants/list/v5`
+
+   * Used for restaurant listing information.
+   * Returned restaurant names, cuisines, ratings, delivery times, and pricing information.
+
+2. `/dapi/menu/pl`
+
+   * Used for menu information.
+   * Returned menu categories, food items, and pricing details.
+
+3. `/dapi/menu/pl?restaurantId={id}`
+
+   * Used for retrieving menu information for specific restaurants.
+
+Screenshots of network requests and JSON responses were captured and stored as evidence.
+
+---
+
+## Menu Intelligence Process
+
+Five restaurants were selected from the dataset:
+
+* Pizza Hut
+* Domino's Pizza
+* Burger King
+* KFC
+* Barbeque Nation
+
+For each restaurant, menu categories, top menu items, and item prices were collected.
+
+The highest priced item, lowest priced item, and estimated bestseller item were identified based on menu structure, pricing, and brand popularity.
+
+---
+
+## Data Cleaning Process
+
+The collected dataset was cleaned before analysis.
+
+The following cleaning steps were performed:
+
+1. Duplicate Detection
+
+   * Dataset was checked for duplicate restaurant entries.
+   * No duplicate records were identified.
+
+2. Missing Value Handling
+
+   * Missing values were reviewed and standardized.
+   * Where information was unavailable, appropriate placeholders were used.
+
+3. Cuisine Normalization
+
+   * Cuisine labels were standardized for consistency.
+   * Formatting differences were corrected where necessary.
+
+4. Data Validation
+
+   * Ratings, delivery times, review counts, and pricing fields were verified for consistency.
+
+Before Cleaning: 30 Records
+
+After Cleaning: 30 Records
+
+---
+
+## Tools Used
+
+* Swiggy
+* Google Chrome
+* Chrome DevTools
+* Microsoft Excel
+* SQL
+
+---
+
+## Problems Encountered
+
+Several challenges were encountered during the project:
+
+* Dynamic restaurant listings changed over time.
+* Some restaurants did not display complete information.
+* Identifying API endpoints required investigation using Developer Tools.
+* Manual collection of menu information was time-consuming.
+
+---
+
+## Assumptions Made
+
+* Restaurant availability during data collection represented normal operating conditions.
+* Missing information was treated as unavailable rather than incorrect.
+* Estimated bestseller items were identified using popularity, pricing, and brand positioning.
+
+---
+
+## Future Improvements
+
+If additional time were available, the following improvements could be made:
+
+* Collect a larger sample of restaurants.
+* Automate data collection using APIs or web scraping techniques.
+* Create interactive dashboards for visualization.
+* Perform deeper competitor and pricing analysis.
+
+---
+
+## Conclusion
+
+This project provided practical experience in data collection, API investigation, data cleaning, SQL design, and business analysis. The study helped identify market trends, cuisine saturation levels, and opportunities for potential cloud kitchen businesses in Nashik.
